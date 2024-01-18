@@ -1,0 +1,28 @@
+{
+  "name": "tcr",
+  "version": "1.0.0",
+  "description": "training remote command",
+  "main": "app.js",
+  "scripts": {
+    "start": "export NODE_ENV=development && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./build.sh"
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*"
+    ]
+  },
+  "bin": "app.js",
+  "author": "refar",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "child_process": "^1.0.2",
+    "connect-history-api-fallback": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "pkg": "^5.8.1"
+  }
+}
